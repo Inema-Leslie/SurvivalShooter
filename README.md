@@ -2,18 +2,17 @@
 
 An Augmented Reality mobile survival combat game built with **Unity 6** and **AR Foundation**.
 
-- **Developer:** Inema Amanda Leslie
 - **Target Platform:** Android & iOS (AR Foundation / ARCore / ARKit)
 - **Player Perspective:** First-Person Shooter (FPS)
-- **Technical Documentation:** See [`TECHNICAL_DOCUMENTATION.md`](file:///c:/Users/LENOVO/OneDrive/Desktop/SurvivalShoooter/TECHNICAL_DOCUMENTATION.md) for full architecture details, OOP structure, design patterns, and audio documentation.
+
 
 ---
 
 ## 🎮 Game Overview
 
 The player uses their mobile device to scan physical horizontal planes in their environment. Upon detecting a surface, a **Custom Plane Tracker** displaying **"INEMA AMANDA LESLIE - AR PLANE TRACKER"** appears. Tapping on the plane anchors the game arena and initiates the survival combat loop:
-- **Melee Enemies** (crimson cyber-beasts with scythe blades) swarm toward the player to deal melee damage. They have 50 HP (destroyed in 2 player shots).
-- **Shooter Enemies** (spherical hover drones with pulsating cyan cores) advance to combat distance, stop, and fire projectiles. They have 125 HP (destroyed in 5 player shots).
+- **Melee Enemies**  swarm toward the player to deal melee damage. They have 50 HP (destroyed in 2 player shots).
+- **Shooter Enemies**  advance to combat distance, stop, and fire projectiles. They have 125 HP (destroyed in 5 player shots).
 - The player must aim their device, tap the screen or press the **FIRE** button to shoot pooled projectiles, and survive until the timer expires.
 - Final score, kills, and survival time are automatically logged to a **Local Leaderboard** displaying the **latest 5 gameplay sessions**.
 
@@ -39,7 +38,7 @@ The player uses their mobile device to scan physical horizontal planes in their 
 
 ```
 Assets/
-├── Audio/                     # 9 Generated 16-bit PCM WAV audio clips
+├── Audio/                    
 │   ├── PlayerShoot.wav
 │   ├── PlayerDeath.wav
 │   ├── EnemySpawn.wav
@@ -49,7 +48,7 @@ Assets/
 │   ├── UIClick.wav
 │   ├── GameOverDefeat.wav
 │   └── GameOverVictory.wav
-├── Prefabs/                   # Game Prefabs
+├── Prefabs/                  
 │   ├── MeleeEnemy.prefab
 │   ├── ShooterEnemy.prefab
 │   ├── PlayerBullet.prefab
