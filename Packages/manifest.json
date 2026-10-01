@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "com.unity.ai.navigation": "2.0.0",
+    "com.unity.feature.ar": "1.0.2",
+    "com.unity.xr.arfoundation": "6.0.4",
+    "com.unity.xr.arcore": "6.0.4",
+    "com.unity.xr.arkit": "6.0.4",
+    "com.unity.ugui": "2.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0"
+  }
+}

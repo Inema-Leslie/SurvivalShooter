@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainARSurvivalShooter.unity
+    guid: e6e9faff58dbe5144989f2d9ee3938d9
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 925c83311bba73f45adba2d64b0c1476, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: aae0c3e240060b24b9cce7b75f55043e, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6da6ba520693d734894c517609b4b85c, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0607dae6a94f9ce438c51aa24e537f07, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6b8b0c72c1c76ad408bce0b7232020a2, type: 2}
