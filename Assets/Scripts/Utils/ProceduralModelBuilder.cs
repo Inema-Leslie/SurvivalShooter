@@ -25,6 +25,22 @@ namespace SurvivalShooter.Utils
             if (shader == null) shader = Shader.Find("Diffuse");
             if (shader == null) shader = Shader.Find("Unlit/Color");
 
+#if UNITY_EDITOR
+            // Save as a real asset so prefabs keep a valid material reference
+            // (in-memory materials are lost when a prefab is saved -> magenta objects).
+            string matName = "Gen_" + ColorUtility.ToHtmlStringRGBA(baseColor)
+                + "_" + ColorUtility.ToHtmlStringRGBA(emissionColor)
+                + "_e" + Mathf.RoundToInt(emissionColor.maxColorComponent * 10f)
+                + "_m" + Mathf.RoundToInt(metallic * 100f)
+                + "_s" + Mathf.RoundToInt(smoothness * 100f);
+            string matPath = "Assets/Materials/" + matName + ".mat";
+            if (!Application.isPlaying)
+            {
+                var existing = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>(matPath);
+                if (existing != null) return existing;
+            }
+#endif
+
             Material mat = new Material(shader != null ? shader : Shader.Find("Standard"));
             if (mat.HasProperty("_BaseColor")) mat.SetColor("_BaseColor", baseColor);
             if (mat.HasProperty("_Color")) mat.SetColor("_Color", baseColor);
@@ -40,6 +56,15 @@ namespace SurvivalShooter.Utils
                     mat.SetColor("_EmissionColor", emissionColor);
                 }
             }
+
+#if UNITY_EDITOR
+            if (!Application.isPlaying)
+            {
+                if (!UnityEditor.AssetDatabase.IsValidFolder("Assets/Materials"))
+                    UnityEditor.AssetDatabase.CreateFolder("Assets", "Materials");
+                UnityEditor.AssetDatabase.CreateAsset(mat, matPath);
+            }
+#endif
 
             return mat;
         }
