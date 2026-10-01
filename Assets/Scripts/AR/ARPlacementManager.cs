@@ -62,7 +62,7 @@ namespace SurvivalShooter.AR
 
         private void OnDisable()
         {
-            GameManager.OnGameStateChanged += HandleGameStateChanged;
+            GameManager.OnGameStateChanged -= HandleGameStateChanged;
         }
 
         private void HandleGameStateChanged(GameState state)

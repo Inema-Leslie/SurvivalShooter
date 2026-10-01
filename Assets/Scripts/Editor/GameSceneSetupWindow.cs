@@ -105,6 +105,7 @@ namespace SurvivalShooter.Editor
             // 6. Hit Spark Effect Prefab
             GameObject hitSpark = new GameObject("HitEffect");
             var ps = hitSpark.AddComponent<ParticleSystem>();
+            hitSpark.GetComponent<ParticleSystemRenderer>().sharedMaterial = ProceduralModelBuilder.CreateMaterial(new Color(1f, 0.9f, 0.3f), new Color(1f, 0.9f, 0.3f) * 2f);
             var pooledEff = hitSpark.AddComponent<PooledEffect>();
             pooledEff.SetTag(ObjectPoolManager.TAG_HIT_EFFECT);
             var main = ps.main;
