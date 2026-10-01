@@ -8,7 +8,7 @@ An Augmented Reality mobile survival combat game built with **Unity 6** and **AR
 
 ---
 
-## 🎮 Game Overview
+##  Game Overview
 
 The player uses their mobile device to scan physical horizontal planes in their environment. Upon detecting a surface, a **Custom Plane Tracker** displaying **"INEMA AMANDA LESLIE - AR PLANE TRACKER"** appears. Tapping on the plane anchors the game arena and initiates the survival combat loop:
 - **Melee Enemies**  swarm toward the player to deal melee damage. They have 50 HP (destroyed in 2 player shots).
@@ -18,7 +18,7 @@ The player uses their mobile device to scan physical horizontal planes in their 
 
 ---
 
-## ✨ Key Features & Architectural Compliance
+## Key Features & Architectural Compliance
 
 | Requirement | Implementation Details |
 | :--- | :--- |
@@ -34,7 +34,7 @@ The player uses their mobile device to scan physical horizontal planes in their 
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 
 ```
 Assets/
@@ -95,7 +95,7 @@ Assets/
 
 ---
 
-## 🚀 How to Run in Unity Editor
+## How to Run in Unity Editor
 
 1. Open this project in **Unity 6 (6000.4.5f1)**.
 2. In the Unity menu, select:  
@@ -110,7 +110,7 @@ Assets/
 
 ---
 
-## 📱 Mobile Build Instructions (Android ARCore)
+## Mobile Build Instructions (Android ARCore)
 
 1. Open **File -> Build Settings...**
 2. Switch platform to **Android**.
