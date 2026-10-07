@@ -2,7 +2,7 @@
 
 An Augmented Reality mobile survival combat game built with **Unity 6** and **AR Foundation**.
 
-- **Target Platform:** Android & iOS (AR Foundation / ARCore / ARKit)
+- **Target Platform:** Android  (AR Foundation / ARCore / ARKit)
 - **Player Perspective:** First-Person Shooter (FPS)
 
 
